@@ -3,10 +3,14 @@ const path = require('path');
 const chokidar = require('chokidar');
 const extensions = require('./extensions');
 
-const Directory = '/Users/nagi/Downloads';
-const imageDirectory = '/Users/nagi/Downloads/Images';
-const videoDirectory = '/Users/nagi/Downloads/Videos';
-const audioDirectory = '/Users/nagi/Downloads/Audios';
+// specify the directory to watch
+const Directory = '';
+
+// specify the directories to move files to
+const imageDirectory = '';
+const videoDirectory = '';
+const audioDirectory = '';
+const documentDirectory = '';
 
 function makeUnique (dir, file) {
     const { name, ext } = path.parse(file);
